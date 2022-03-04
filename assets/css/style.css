@@ -64,7 +64,7 @@ header {
 
 main {
     width: 65%;
-    height: 540px;
+    height: 70vh;
     margin: 0 auto;
     margin-top: 40px;
 }
@@ -73,6 +73,7 @@ main {
     float: left;
     width: 70%;
     padding: 30px;
+    margin-bottom: 40px;
     background-color: #fff;
 }
 
@@ -110,8 +111,8 @@ main {
 .secondText p,
 .leftContent p {
     font-size: 18px;
-    line-height: 2.2;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.2;
     color: #777;
 }
 
@@ -144,20 +145,62 @@ main {
     color: #4aaaa5;
 }
 
+/* Contact - Main */
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+
+input[type=submit] {
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: 0 none;
+    cursor: pointer;
+    color: #fff;
+    background: #4aaaa5;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
 /* Footer */
 
 .footerPart {
-    background-color: #666666;
     height: 100px;
-    border-top: 8px solid #4aaaa5;
-
     padding: 30px;
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+
 }
 
 .footerPart p {
-    color: #ccc;
-    text-align: center;
+    padding: 10px;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+    text-align: center;
+    color: #ccc;
 }
