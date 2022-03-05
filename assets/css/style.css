@@ -11,7 +11,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    width: 100%;
+    z-index: 99999;
     height: 90px;
     border-bottom: 2px solid #ccc;
     background-color: #fff;
@@ -25,7 +25,6 @@ header {
 .logo {
     float: left;
     width: 250px;
-    height: 90px;
     text-align: center;
     background-color: #4aaaa5;
 }
@@ -40,7 +39,7 @@ header {
 
 .navbar {
     float: right;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .navbar li {
@@ -64,9 +63,7 @@ header {
 
 main {
     width: 65%;
-    height: 70vh;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 .bigSection {
@@ -145,6 +142,33 @@ main {
     color: #4aaaa5;
 }
 
+/* Portfolio - Main */
+
+.card {
+    float: left;
+    position: relative;
+    margin: 20px 30px 20px 10px;
+}
+
+.card img {
+    width: 275px;
+    height: 205px;
+    opacity: 0.8;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    text-align: center;
+    color: #fff;
+    background-color: #4aaaa5;
+}
+
 /* Contact - Main */
 
 label,
@@ -203,4 +227,14 @@ input {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: #ccc;
+}
+
+/* Hover - Styles */
+
+.navbar a:hover {
+    color: #827F7E;
+}
+
+.logo:hover {
+    background-color: #5E7F7E;
 }
